@@ -1,0 +1,71 @@
+{% extends 'index.html' %}
+{% block body %}
+<style type="text/css">
+  #one {
+    background-color: rgb(246, 231, 228);
+  }
+
+  #two {
+    background-color: rgb(246, 231, 228);
+  }
+
+  #three {
+    background-color: rgb(246, 231, 228);
+  }
+
+  .main2 {
+    display: flex;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .main2>div {
+    flex-basis: 50%;
+  }
+</style>
+<div class="main2">
+  <div class="mt-4 ml-3 jumbotron" id="one">
+    <img src="/static/1home.avif" width="500" height="500">
+  </div>
+  <div class="mr-4 mt-4 jumbotron ">
+    <h1 class="mt-1 display-4"><b>Who we are?</b></h1>
+    <p font-family="encode-sans" class="lead">More than just a cafe</p>
+    <hr class="my-4">
+    <p font-family="encode-sans"><i>On the outside, we are just a cafe in Chandigarh,India but on the inside, we are an
+        experience for a variety of budding youngsters and collegers from all over Tricity. </i></p>
+  </div>
+</div>
+</div>
+<div class="main2">
+  <div class="ml-3 jumbotron" id="two">
+    <img src="/static/2home.avif" width="500" height="500">
+  </div>
+  <div class="mr-3 jumbotron">
+    <h1 class="mt-1 display-4" font-family="encode-sans"><b>Life is meant to be more than just survival</b></h1>
+    <hr class="my-4">
+    <p font-family="encode-sans"><i>According to us, life is meant to be more than just survivial, it is meant to be an
+        experience or a chain or experiences and it is just one of these great experiences that we wish to provide you
+        at Book N Brew.</i></p>
+  </div>
+</div>
+
+<div class="main2">
+  <div class="ml-3 mb-4 jumbotron" id="three">
+    <img src="/static/3home.avif" width="500" height="500">
+  </div>
+  <div class="mr-3 mb-4 jumbotron">
+    <h1 class="mt-1 display-4" font-family="encode-sans"><b>Will I like it here?</b></h1>
+    <hr class="my-4">
+    <p font-family="encode-sans"><i>Well, don't take our word for it, come today, try, and see for yourselves at Book N
+        Brew,Sector 16D, Chandigarh.</i></p>
+  </div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+
+{% endblock body %}

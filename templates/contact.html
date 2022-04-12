@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block body %}
+<h1 class="mx-4 mt-2">Contact Us</h1>
+<form class="mx-4" method="POST" action="">
+  {% csrf_token %}
+  <div class="mt-5 form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" name="email" placeholder="name@example.com">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="mb-5 row">
+    <div class="col">
+      <input type="text" class="form-control" name="first_name"placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" name="last_name" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Please enter your feedback or complaint:</label>
+    <textarea class="form-control" name="feedback" rows="6"></textarea>
+    <small id="formHelp" class="form-text text-muted">We'll attempt to get back to you as soon as possible. </small>
+  </div>
+  <input type="submit" class="my-4 btn btn-primary" ></input>
+</form>
+
+{% endblock body %}
